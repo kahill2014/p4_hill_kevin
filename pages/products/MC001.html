@@ -5,11 +5,10 @@
 		<meta name="robots" content="noindex,nofollow">
 		<title>Kaminski Flies | Online Store</title>
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.png" type="img/png" />
+		<link rel="shortcut icon" href="../../images/favicon.png" type="img/png" />
 
 		<link rel="stylesheet" href="https://use.typekit.net/uhd4rht.css">
-		<link rel="stylesheet" href="https://use.typekit.net/uhd4rht.css">
-		<link type="text/css" rel="stylesheet" href="../styles.css" />
+		<link type="text/css" rel="stylesheet" href="../../styles.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,30 +20,52 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 
-	<body>
+	<body id="product">
 		<header class="flex">
-			<a href="../index.html"><img src="../images/logo_horizontal_inverse.png" alt="Kaminski Flies Logo" /></a>
+			<a href="../../index.html"><img src="../../images/logo_horizontal_inverse.png" alt="Kaminski Flies Logo" /></a>
 			<nav>
 				<input class="menu-btn" type="checkbox" id="menu-btn" />
 				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 				<ul class="menu">
-					<li><a href="about.html">About</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="tutorials.html">Tutorials</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../shop.html">Shop</a></li>
+					<li><a href="../tutorials.html">Tutorials</a></li>
+					<li><a href="../contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="flex">
-			<h1>Purple Feather Fly</h1>
-			<section class="product" id="product">
-				
+			<h1>Online Store</h1>
+			<section class="flex featured-fly">
+				<div class="featured-img">
+					<img alt="Featured Fly" src="../../images/shop/item-1.png" />
+				</div>
+				<div class="featured-text">
+					<h2>Purple Feather Fly</h2>
+					<p class="product-price">$7.99</p>
+					<p>
+						A purple feather fly used to help you snag a largemouth bass while fly fishing. It's affordable, effective, and most importantly: it looks awesome.
+					</p>
+					<div class="cart-row">
+						<select id="shop-quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<button class="button cart-button">Add to cart</button>
+					</div>
+				</div>
 			</section>
+			<a class="button shop-button" href="../shop.html">Continue Shopping</a>
 		</main>
 		<footer class="flex">
 			<span>Copyright 2020 | Kaminski Flies</span>
 		</footer>
 	</body>
+	<!-- Backstretch -->
+	<script src="../../js/backstretch.min.js"></script>
 	<!-- Custom Main JS -->
-	<script src="../js/main.js"></script>
+	<script src="../../js/main.js"></script>
 </html>

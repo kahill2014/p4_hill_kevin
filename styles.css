@@ -33,6 +33,7 @@ h2 {
 body {
 	display: flex;
 	flex: 1;
+	flex-basis: 100%;
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow-x: hidden;
@@ -41,6 +42,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	height: 100%;
+	max-width: 100%;
 }
 
 .flex {
@@ -48,10 +50,6 @@ body {
 	flex: 1;
 	flex-basis: 100%;
 	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.home {
 	justify-content: center;
 }
 
@@ -137,6 +135,7 @@ nav ul li {
 main {
 	padding: 2rem 1rem;
 	padding-top: 6rem;
+	max-width: 100%;
 }
 
 footer {
@@ -210,7 +209,7 @@ textarea {
 
 /***** Instagram Feed Styles *****/
 .instagram_feed {
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 .instagram_username {
 	font-size: 2rem;
@@ -355,7 +354,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	margin-bottom: 1.75rem;
 	background-color: #f4f4f5;
 	transition: .25s;
-	border: 2px solid #303030;
+	box-shadow: 2px 2px #303030;
 }
 .shop-feature {
 	border: 2px solid #C82127;
@@ -434,6 +433,53 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	border-left: 25px solid transparent;
 	transform: rotate(-70deg);
 	content: '';
+}
+
+/***** Shop Product Page Styles *****/
+#shop-quantity {
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+	padding: 8px;
+	font-size: 1rem;
+	margin-top: 1rem;
+	max-width: 25%;
+}
+.product-price {
+	width: 100%;
+	font-size: 1.5rem;
+	padding: .5rem 0;
+}
+.cart-row {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: space-between;
+}
+.button {
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+	padding: 6px;
+	font-size: 1rem;
+	margin-top: 1rem;
+	max-width: 50%;
+	justify-content: center;
+	background-color: #8ACCF0;
+	cursor: pointer;
+	transition: .2s;
+}
+.shop-button {
+	margin-top: 2rem;
+	max-width: 100%;
+	padding: 10px;
+	background-color: rgba(36,53,64,.9);
+	color: #fff;	
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #CDE0E8;
+	color: #000;
 }
 
 /***** Tutorial Video Styles *****/
@@ -518,9 +564,13 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	.star {
 		margin-left: -20%;
 	}
+	.featured-text .product-price {
+		width: 100%;
+		padding-bottom: 0;
+	}
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	main {
 		max-width: 80%;
 		min-height: 100%;
@@ -571,6 +621,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 		justify-content: flex-start;
 		padding-bottom: 0;
 		margin-bottom: 2rem;
+		align-items: center;
 	}
 	.featured-text, .about-text {
 		flex: .5;
@@ -580,6 +631,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 		padding: 0 2%;
 		align-items: center;
 		font-size: 1rem;
+	}
+	.featured-text {
+		align-content: flex-start;
+		align-items: center;
 	}
 	.featured-text h2 {
 		margin-top: 1rem;
@@ -684,9 +739,22 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	#tutorials h1 {
 		margin-bottom: 3rem;
 	}
+
+	.cart-row {
+		justify-content: flex-start;
+	}
+	.cart-button {
+		margin-left: 1rem;
+		max-width: 8rem;
+	}
+	.shop-button {
+		margin-top: 0;
+		padding: 1rem;
+		max-width: 15rem;
+	}
 }
 
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
 	main {
 		max-width: 65%;
 	}

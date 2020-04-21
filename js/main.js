@@ -9,6 +9,8 @@ if($("#home").length){
 	$("#contact").backstretch("../images/contact_background.jpg");
 } else if($("#tutorials").length){
 	$("#tutorials").backstretch("../images/tutorials_background.jpg");
+} else if($("#product").length){
+	$("#product").backstretch("../../images/shop_background.jpg");
 }
 
 /* Initialize Instagram feed plugin */

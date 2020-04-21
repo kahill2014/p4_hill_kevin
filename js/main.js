@@ -10,11 +10,11 @@ if($("#home").length){
 } else if($("#tutorials").length){
 	$("#tutorials").backstretch("../images/tutorials_background.jpg");
 } else if($("#product").length){
-	$("#product").backstretch("../../images/shop_background.jpg");
+	$("#product").backstretch("../images/shop_background.jpg");
 }
 
 /* Initialize Instagram feed plugin */
-if($('.home').length){
+if($('#home').length){
 	$(window).on('load', function(){
 	  $.instagramFeed({
 		'username': 'kaminski_flies',

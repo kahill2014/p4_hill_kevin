@@ -1,0 +1,709 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+h1 {
+	font-family: "rosewood-std-fill", serif;
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	font-size: 3.75rem;
+	line-height: 3rem;
+	margin-top: 1rem;
+}
+
+h2 {
+	font-family: "future-pt",sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow-x: hidden;
+	background-color: #f4f4f5;
+	font-family: alegreya-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	height: 100%;
+}
+
+.flex {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.home {
+	justify-content: center;
+}
+
+#contact h1 {
+	padding-top: 3rem;
+	margin-bottom: 2.25rem;
+}
+#shop h1, #about h1, #home h1, #tutorials h1 {
+	padding-top: 1rem;
+	margin-bottom: 1rem;
+}
+.featured-fly {
+	background-color: rgba(36,53,64,.9);
+	color: #fff;
+	justify-content: center;
+	padding-bottom: 1rem;
+	margin-top: 2rem;
+	max-width: 100%;
+}
+.featured-fly h2 {
+	font-size: 2rem;
+	margin-top: 1.5rem;
+}
+.featured-text, .about-text {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	padding: 1.6rem;
+	padding-bottom: 0;
+	flex-wrap: wrap;
+}
+.featured-text a {
+	padding: .75rem;
+	font-size: 1.25rem;
+	text-decoration: none;
+	background-color: #f4f4f5;
+	color: #303030;
+	margin-top: 1rem;
+	transition: .2s;
+}
+.featured-text a:hover {
+	background-color: #8ACCF0;
+}
+.about-text {
+	font-size: 1.15rem;
+	line-height: 1.35rem;
+}
+.featured-img {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+}
+.featured-img img {
+	max-width: 100%;
+}
+
+header {
+	background-color: rgba(36,53,64,.85);
+	padding: .5rem 1rem;
+	height: 4rem;
+}
+
+header img {
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+	width: 250px;
+	max-width: 250px;
+	height: auto;
+}
+
+nav {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	padding-right: 1rem;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+main {
+	padding: 2rem 1rem;
+	padding-top: 6rem;
+}
+
+footer {
+	display: flex;
+	bottom: 0;
+	width: 100%;
+	flex: 1;
+	flex-basis: 100%;
+	height: 1rem;
+	background-color: rgba(36,53,64,.85);
+	color: #fff;
+	justify-content: center;
+	padding: 1rem;
+}
+footer span {
+	text-align: center;
+}
+
+/***** Contact Form Styles *****/
+form {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	max-width:100%;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.contact-input {
+  color: #303030;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #f4f4f5;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.contact-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+/***** Instagram Feed Styles *****/
+.instagram_feed {
+	margin-top: 2rem;
+}
+.instagram_username {
+	font-size: 2rem;
+}
+.instagram_username .igu_link {
+	font-size: 1.25rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+.instagram_username .igu_link a {
+	color: #fff;
+}
+
+/***** Hamburger Styles: https://codepen.io/mutedblues/pen/MmPNPG (with modifications) *****/
+header {
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.4);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #04A0D7;
+}
+
+header li a {
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	border-bottom: 1px solid #8ACCF0;
+}
+
+header li a:hover,
+header .menu-btn:hover {
+	background-color: #8ACCF0;
+}
+
+/* menu */
+
+header .menu {
+	max-height: 0;
+	transition: max-height .2s ease-out;
+	position: fixed;
+	width: 100%;
+	top: 5rem;
+	left: 0;
+}
+
+/* menu icon */
+
+header .menu-icon {
+	cursor: pointer;
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+	justify-content: flex-end;
+	padding: 28px 20px;
+	padding-right: 0;
+	position: relative;
+	user-select: none;
+}
+
+header .menu-icon .navicon {
+	background: #f4f4f5;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 20px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+	background: #f4f4f5;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+header .menu-icon .navicon:before {
+	top: 8px;
+}
+
+header .menu-icon .navicon:after {
+	top: -8px;
+}
+
+/* menu btn */
+
+header .menu-btn {
+	display: none;
+}
+
+header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+/***** Shop Styles *****/
+.shop-tiles {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+.shop-item {
+	display: flex;
+	flex: .5;
+	flex-basis: 50%;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 47%;
+	margin-bottom: 1.75rem;
+	background-color: #f4f4f5;
+	transition: .25s;
+	border: 2px solid #303030;
+}
+.shop-feature {
+	border: 2px solid #C82127;
+}
+.shop-item:hover {
+	background-color: #fff;
+}
+.shop-item .title, .shop-item .price {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: center;
+}
+.shop-item .title {
+	font-weight: 600;
+	margin-top: 1rem;
+}
+.shop-item .price {
+	margin-bottom: 1rem;
+}
+.shop-item img {
+	max-width: 100%;
+}
+.shop-text {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.shop-item a {
+	text-decoration: none;
+	color: #000;
+}
+.shop-feature a {
+	color: #C82127;
+}
+.star {
+	margin: 12.5px 0;
+	position: absolute;
+	display: block;
+	color: red;
+	width: 0px;
+	height: 0px;
+	border-right: 25px solid transparent;
+	border-bottom: 17.5px solid red;
+	border-left: 25px solid transparent;
+	transform: rotate(35deg);
+	margin-left: -17%;
+	margin-top: -.5%;
+}
+.star:before {
+	border-bottom: 20px solid red;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -11.25px;
+	left: -16.25px;
+	display: block;
+	content: '';
+	transform: rotate(-35deg);
+}
+.star:after {
+	position: absolute;
+	display: block;
+	color: red;
+	top: .75px;
+	left: -26.25px;
+	width: 0px;
+	height: 0px;
+	border-right: 25px solid transparent;
+	border-bottom: 17.5px solid red;
+	border-left: 25px solid transparent;
+	transform: rotate(-70deg);
+	content: '';
+}
+
+/***** Tutorial Video Styles *****/
+.video h2 {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #fff;
+	background-color: rgba(36,53,64,.85);
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+}
+.video {
+	margin-bottom: 2rem;
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.video-container {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 420px) {
+	.featured-fly {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 1rem;
+	}
+	.featured-text, .about-text {
+		padding: 0;
+		padding: 0 2%;
+	}
+	.about-text {
+		margin-top: 1rem;
+	}
+	.featured-text h2 {
+		margin-top: 1rem;
+	}
+	.featured-text p {
+		padding: 1rem 0;
+	}
+	.about-text p {
+		padding: 0;
+		padding-bottom: 1rem;
+	}
+	.featured-text a {
+		margin-top: 0;
+		padding: .75rem;
+		max-height: 1rem;
+	}
+	.featured-img a {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	.featured-img img {
+		width: 50%;
+		height: auto;
+	}
+	form {
+		max-width: 60%;
+	}
+	.star {
+		margin-left: -20%;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: 80%;
+		min-height: 100%;
+		padding-bottom: 5.5rem;
+	}
+	header {
+		justify-content: center;
+	}
+	header a {
+		margin-left: 10%;
+	}
+	header nav, header .menu{
+		display: flex;
+		flex: 1;
+		clear: none;
+		float: none;
+		max-height: none;
+		z-index: 5;
+		position: relative;
+		top: 0;
+		background: none;
+	}
+	header nav {
+		justify-content: flex-start;
+		padding-left: 3rem;
+		max-width: 100%;
+	}
+	header .menu {
+		justify-content: space-between;
+		max-width: 85%;
+	}
+	header ul {
+		overflow: visible;
+	}
+	header nav ul li a {
+		border-bottom: none;
+		font-size: 1.1rem;
+	}
+	header nav ul li a:hover {
+		background: none;
+		text-decoration: underline;
+	}
+	header .menu-icon {
+		display: none;
+	}
+	.featured-fly {
+		flex-wrap: no-wrap;
+		justify-content: flex-start;
+		padding-bottom: 0;
+		margin-bottom: 2rem;
+	}
+	.featured-text, .about-text {
+		flex: .5;
+		flex-basis: 50%;
+		max-width: 48%;
+		padding: 0;
+		padding: 0 2%;
+		align-items: center;
+		font-size: 1rem;
+	}
+	.featured-text h2 {
+		margin-top: 1rem;
+	}
+	.featured-text a {
+		margin-top: 0;
+		padding: .75rem;
+		max-height: 1rem;
+	}
+	.featured-img {
+		flex: .5;
+		flex-basis: 50%;
+		max-width: 48%;
+	}
+	.featured-img img {
+		width: 100%;
+		height: auto;
+		align-self: center;
+	}
+
+	.shop-tiles {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+	.shop-item {
+		display: flex;
+		flex: .25;
+		flex-basis: 25%;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 23%;
+		margin-bottom: 1.75rem;
+		background-color: #f4f4f5;
+	}
+	.shop-item .title, .shop-item .price {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	.shop-item .title {
+		font-weight: 600;
+		margin-top: 1rem;
+	}
+	.shop-item .price {
+		margin-bottom: 1rem;
+	}
+	.shop-item img {
+		max-width: 100%;
+	}
+	.shop-text {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.star {
+		margin-left: -7.5%;
+	}
+	.video {
+		margin-bottom: 2rem;
+		display: flex;
+		flex: .5;
+		flex-basis: 50%;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 90%;
+	}
+	.video-container {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		justify-content: center;
+		max-width: 90%;
+	}
+	.video iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.video h2 {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		color: #fff;
+		max-width: 85%;
+		padding-left: 5%;
+	}
+	#tutorials h1 {
+		margin-bottom: 3rem;
+	}
+}
+
+@media (min-width: 1080px) {
+	main {
+		max-width: 65%;
+	}
+	/* Not proud of this hack, but it was the easiest way to keep this plugin responsive */
+	.instagram-sidecar img, .instagram-image img {
+		width: 25% !important;
+	}
+	form {
+		max-width: 45%;
+	}
+	.star {
+		margin-left: -7%;
+	}
+	header a {
+		margin-left: 19%;
+	}
+	header .menu {
+		max-width: 55%;
+	}
+}
